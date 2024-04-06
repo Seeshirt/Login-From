@@ -1,16 +1,20 @@
-document.getElementById('LoginFrom').addEventListener('submit', function(event) {
-  event.preventDefault(); 
-  
- 
+function login() {
   var username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 
-  
-  if (username === 'admin' && password === 'password') {
-    
-    alert('Login successful!');
+  if (username === 'Parul' && password === 'P@123') {
+      document.getElementById('message').innerText = "Login successful!";
   } else {
-    document.getElementById('error-msg').textContent = 'Invalid username or password';
+      document.getElementById('message').innerText = 'Invalid username or password';
   }
-});
-  
+}
+
+function forgotPassword() {
+  var username = document.getElementById('username').value;
+  alert("Forgot Password .");
+}
+
+function register() {
+ 
+}
+
